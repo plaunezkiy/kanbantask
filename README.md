@@ -5,6 +5,7 @@
 ## Стэк:
 * Django Rest Framework
 * Vue.JS
+* PostgreSQL
 * Docker-compose
 
 ### Запуск
