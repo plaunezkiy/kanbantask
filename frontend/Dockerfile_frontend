@@ -1,0 +1,15 @@
+FROM node:lts-alpine
+
+WORKDIR app/
+
+EXPOSE 8080
+
+CMD ["npm", "run", "start"]
+
+COPY package.json /app
+
+RUN npm install -g pnpm
+
+RUN pnpm install --save babel-runtime vue-hot-reload-api
+
+COPY . /app
